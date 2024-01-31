@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body %}
+    <form method="post">
+        {% csrf_token %}
+        ARE YOU WANT TO DELETE THIS MOVIE?
+        <input type="submit">
+    </form>
+<br>
+<a class="btn btn-primary" href="{% url 'movieapp:index' %}">HOME</a>
+{% endblock %}
